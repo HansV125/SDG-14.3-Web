@@ -1,0 +1,304 @@
+<!DOCTYPE html><html lang="id" class="dark" style=""><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Plus+Jakarta+Sans:wght@400;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "text-secondary": "#B0C4CE",
+                    "surface-muted": "#0A2533",
+                    "tertiary": "#ffb86c",
+                    "secondary-fixed-dim": "#b5c9d7",
+                    "on-tertiary-fixed": "#2c1700",
+                    "surface-container-lowest": "#0a0f13",
+                    "secondary": "#b5c9d7",
+                    "on-primary-container": "#002d44",
+                    "surface-container-highest": "#31353a",
+                    "inverse-on-surface": "#2c3135",
+                    "surface-container-low": "#171c20",
+                    "outline": "#88929b",
+                    "on-surface": "#dfe3e8",
+                    "inverse-primary": "#006492",
+                    "primary-fixed-dim": "#8cceff",
+                    "on-tertiary-fixed-variant": "#683d00",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005",
+                    "surface-tint": "#8cceff",
+                    "surface-bright": "#353a3e",
+                    "inverse-surface": "#dfe3e8",
+                    "tertiary-container": "#ce7e0a",
+                    "text-primary": "#FFFFFF",
+                    "on-primary": "#00344e",
+                    "surface-variant": "#31353a",
+                    "surface-dim": "#0f1418",
+                    "primary": "#8cceff",
+                    "on-secondary-fixed-variant": "#374955",
+                    "secondary-fixed": "#d1e5f3",
+                    "on-tertiary": "#492900",
+                    "on-primary-fixed-variant": "#004b6f",
+                    "tertiary-fixed-dim": "#ffb86c",
+                    "on-secondary-container": "#a4b8c5",
+                    "on-primary-fixed": "#001e2f",
+                    "on-secondary-fixed": "#0a1e28",
+                    "tertiary-fixed": "#ffdcbc",
+                    "primary-container": "#1399db",
+                    "on-background": "#dfe3e8",
+                    "error-container": "#93000a",
+                    "surface-container-high": "#262a2f",
+                    "outline-variant": "#3f4850",
+                    "primary-fixed": "#cae6ff",
+                    "secondary-container": "#374955",
+                    "on-tertiary-container": "#402300",
+                    "surface": "#0f1418",
+                    "background": "#0f1418",
+                    "ocean-teal": "#00F2EA",
+                    "on-surface-variant": "#bec8d2",
+                    "on-secondary": "#20333d",
+                    "surface-container": "#1b2024",
+                    "on-error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "gutter": "24px",
+                    "stack-sm": "8px",
+                    "stack-md": "16px",
+                    "margin-mobile": "20px",
+                    "container-max": "1280px",
+                    "stack-lg": "32px",
+                    "section-gap": "120px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Playfair Display"],
+                    "label-caps": ["Plus Jakarta Sans"],
+                    "headline-md": ["Playfair Display"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-xl-mobile": ["Playfair Display"],
+                    "headline-xl": ["Playfair Display"],
+                    "metric-display": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "headline-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "metric-display": ["56px", {"lineHeight": "1", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    }catch(_e){}</script><meta charset="utf-8">
+<style>
+    .ocean-gradient {
+        background: linear-gradient(180deg, #0f1418 0%, #0A2533 100%);
+    }
+</style>
+</head><body data-page="pengujian" class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 border-b border-outline-variant/10 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop py-4 flex justify-between items-center">
+<div class="font-headline-md text-headline-md text-ocean-teal tracking-tighter">SDG 14.3 Indonesia</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/">BERANDA</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/empati">EMPATI</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/ideasi">IDE</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/prototipe">PROTOTIPE</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 relative active-dot" href="/pengujian">PENGUJIAN</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/refleksi">REFLEKSI</a>
+</div>
+<div id="phase-progress" class="hidden lg:flex items-center gap-3 mr-6" aria-live="polite"><span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest whitespace-nowrap">PERJALANAN</span><div class="flex items-center gap-1.5" data-progress-dots></div></div><a class="bg-primary text-on-primary px-6 py-2 font-label-caps text-label-caps uppercase tracking-widest rounded-lg hover:bg-primary-container transition-all inline-block text-center" href="/refleksi">REFLEKSI</a>
+</div>
+</nav>
+
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 ocean-gradient overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30 z-10"></div>
+<img alt="Reef Background" class="w-full h-full object-cover grayscale-[20%] opacity-30" src="https://lh3.googleusercontent.com/aida/AP1WRLuDhrEUzDII_jKwQio2WfNGJUUq9137NKibfG1JjkGNF2--6ozkZo4V8jjALHXJMbgKO-ivZqFT7zkyUcyggndP0WXLFiTyGKZoePVVYiqiAzy5tr4VKaI5gD4DQCu1LBj5lfRQNoh17aLjYFybvt9jjG_qyLlWUtv_2mMZQBtehBCxhWRLGyxCbn2Tj0rsiZGgpkHH8a-HPGQWhGQNzlowsWru8ddFk4Cvw54QGeFKSd_OgxuLPMLUvCA">
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center gap-stack-lg relative z-10">
+<div class="flex-1 space-y-stack-md">
+<span class="font-label-caps text-label-caps text-ocean-teal tracking-widest uppercase">Tahapan pengujian</span>
+<h1 class="font-headline-xl text-headline-xl text-text-primary leading-tight">
+    Fase 4: Pengujian<div><span style="color: rgb(140, 206, 255); letter-spacing: -0.02em; background-color: initial;">Validasi &amp; Umpan Balik</span></div></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+    Menguji efektivitas prototipe dalam memantau tingkat keasaman laut melalui uji coba lapangan langsung dengan komunitas nelayan dan teman pengembang.
+</p>
+</div>
+<div class="flex-1 relative">
+</div>
+</div>
+</section>
+
+<!-- Metode Pengujian -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="">
+<h2 class="font-headline-lg text-headline-lg text-text-primary mb-4">Hasil Uji: Kesimpulan Utama</h2>
+<div class="h-1 w-24 bg-primary mb-6"></div>
+
+</div>
+</div>
+<div class="grid grid-cols-1 gap-gutter"><!-- Card 1: Validasi Algoritma -->
+<div class="group bg-surface-muted border border-white/10 p-stack-lg rounded-lg hover:border-primary/40 transition-all duration-300 -mt-12">
+  <div class="w-12 h-12 bg-primary/10 flex items-center justify-center rounded-lg mb-6 group-hover:bg-primary group-hover:text-on-primary transition-all">
+    <span class="material-symbols-outlined">verified</span>
+  </div>
+  <h3 class="font-headline-md text-headline-md text-text-primary mb-4">Hasil Utama Pengujian</h3>
+  <div><br></div><div class=""><div class="">Kesimpulan dari pengujian prototipe Model Machine Learning untuk Prediksi Risiko Pengasaman Laut menunjukkan bahwa sistem ini berhasil menawarkan alur navigasi empat layar yang jelas serta sistem klasifikasi risiko empat level yang intuitif. Fitur simulasi skenario (what-if) dinilai sangat komunikatif dan dipertahankan sebagai keunggulan utama dari alat prediksi ini. Meskipun pemilihan algoritmanya dinilai sudah cukup kuat, hasil pengujian menyoroti bahwa penyajian probabilitas dan kontribusi fitur dalam angka persentase yang sangat presisi dapat menyesatkan pengguna, mengingat model tersebut saat ini masih sepenuhnya menggunakan data sintetis.</div><div><br></div>Berdasarkan umpan balik retrospektif tersebut, pengembangan prototipe ke depannya membutuhkan penyederhanaan antarmuka, seperti mengurangi kepadatan elemen pada layar hasil prediksi dan mulai menampilkan margin of error untuk setiap probabilitas. Sistem juga dinilai perlu lebih ramah terhadap pengguna non-teknis dengan menambahkan halaman onboarding, penjelasan ringkas pada kolom input, serta menyertakan rekomendasi tindakan konkret untuk masing-masing level risiko. Untuk mewujudkan alat kebijakan yang benar-benar efektif, iterasi selanjutnya dituntut untuk mulai merancang skema pengumpulan data riil dari lapangan, menambahkan fitur ekspor data ke format PDF atau CSV, serta menggunakan lebih dari satu model sebagai baseline pengujian.
+  </div><p></p>
+</div>
+<!-- Card 2: Aksesibilitas Lapangan -->
+</div>
+</section><section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+  <div class="mb-12">
+    <h2 class="font-headline-md text-headline-md text-text-primary mb-4">Umpan Balik Terperinci</h2>
+    <div class="h-1 w-24 bg-primary"></div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+    <div class="bg-surface-container p-8 rounded-xl border border-white/5">
+      <h3 class="font-bold text-text-primary mb-4">More Of</h3>
+      <ul class="space-y-3 text-body-md text-text-secondary"><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span> Tambahkan penjelasan singkat di setiap input agar pengguna bisa paham tanpa pengetahuan teknis.</li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span> Tampilkan margin of error dari probabilitas, bukan hanya angka tunggal seperti 97.5%.</li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span> Perbanyak contoh kasus yang sudah ada agar pengguna baru bisa langsung mencoba tanpa bingung.</li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span> Sertakan visualisasi distribusi data sintetis agar reviewer bisa menilai apakah data training sudah representatif.</li></ul>
+    </div>
+    <div class="bg-surface-container p-8 rounded-xl border border-white/5">
+      <h3 class="font-bold text-text-primary mb-4">Less Of</h3>
+      <ul class="space-y-3 text-body-md text-text-secondary"><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Kurangi elemen di Layar 2. Feature importance + progress bar + alert dalam satu layar bisa membingungkan pengguna.</div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Layar histori (Layar 3) masih terlalu sederhana.&nbsp;</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span> Hindari menampilkan feature importance dalam persen yang terlihat terlalu akurat untuk data sintetis.&nbsp;&nbsp;</li></ul>
+    </div>
+    <div class="bg-surface-container p-8 rounded-xl border border-white/5">
+      <h3 class="font-bold text-text-primary mb-4">Keep Doing</h3>
+      <ul class="space-y-3 text-body-md text-text-secondary"><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Klasifikasi 4 level risiko (Rendah / Sedang / Tinggi / Kritis) dengan warna berbeda sudah intuitif dan komunikatif.&nbsp;</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Fitur simulasi what-if (Layar 4) dipertahankan sebagai fitur utama prototype.</div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Pemilihan algoritma mudah diinterpretasi dan cukup robust.&nbsp;</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span> Alur navigasi 4 layar (Input → Hasil → Histori → Simulasi) jelas kepada pengguna.&nbsp;</li></ul>
+    </div>
+    <div class="bg-surface-container p-8 rounded-xl border border-white/5">
+      <h3 class="font-bold text-text-primary mb-4">Start Doing</h3>
+      <ul class="space-y-3 text-body-md text-text-secondary"><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Tambahkan tombol ekspor ke PDF atau CSV agar pengguna bisa mendokumentasikan.&nbsp;</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Buat halaman onboarding singkat yang menjelaskan tujuan alat ini sebelum pengguna mengisi input.&nbsp;</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Mulai rancang skema pengumpulan data riil meskipun belum dieksekusi.&nbsp;</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span> Tambahkan rekomendasi tindakan konkret per kategori risiko .&nbsp;</li></ul>
+    </div>
+    <div class="bg-surface-container p-8 rounded-xl border border-white/5">
+      <h3 class="font-bold text-text-primary mb-4">Stop Doing</h3>
+      <ul class="space-y-3 text-body-md text-text-secondary"><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Jangan klaim akurasi sebagai angka absolut, tetapi perlu disertai konteks "pada data sintetis" agar tidak menyesatkan.&nbsp;</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span><div class="">Hentikan rencana menampilkan semua fitur sekaligus di fase lo-fi.&nbsp;</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span> Jangan hanya mengandalkan satu model gunakan model lain juga sebagai baseline sederhana.&nbsp;</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- Hasil Pengujian: Matriks PMI -->
+<section class="py-section-gap bg-surface-container-lowest relative overflow-hidden">
+<div class="absolute inset-0 atmospheric-glow opacity-50"></div>
+<div class="px-margin-desktop max-w-container-max mx-auto relative z-10">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-text-primary mb-4">Hasil Pengujian: Matriks PMI</h2>
+<p class="font-body-md text-body-md text-text-secondary max-w-2xl mx-auto">Sintesis masukan dari pengguna dan ahli dikategorikan ke dalam tiga pilar utama untuk pengembangan iteratif.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Plus -->
+<div class="matrix-card bg-surface-muted/50 border border-ocean-teal/20 p-8 rounded-lg">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-ocean-teal">add_circle</span>
+<span class="font-label-caps text-label-caps text-ocean-teal tracking-widest">PLUS (KEKUATAN)</span>
+</div>
+<ul class="space-y-6">
+<li class="border-l-2 border-ocean-teal pl-4">
+<h4 class="font-bold text-text-primary mb-1">Fitur Simulasi Interaktif</h4>
+<p class="text-sm text-text-secondary">Fitur what-if simulation pada Layar 4 dinilai sebagai keunggulan utama karena memungkinkan pengguna melihat langsung bagaimana manipulasi variabel (seperti mengurangi volume pupuk) dapat menurunkan persentase risiko.</p>
+</li>
+<li class="border-l-2 border-ocean-teal pl-4">
+<h4 class="font-bold text-text-primary mb-1">Desain Komunikatif</h4>
+<p class="text-sm text-text-secondary">Sistem klasifikasi 4 level risiko (Rendah, Sedang, Tinggi, Kritis) yang disertai dengan indikator warna dinilai sangat intuitif dan mudah dipahami oleh pengguna dari berbagai latar belakang.</p>
+</li>
+<li class="border-l-2 border-ocean-teal pl-4"><h4 class="font-bold text-text-primary mb-1">Navigasi Terstruktur</h4><p class="text-sm text-text-secondary">Alur penggunaan sistem yang dibagi menjadi 4 layar utama (Input, Hasil, Histori, Simulasi) sudah sangat jelas dan memudahkan perjalanan pengguna (user journey).</p></li><li class="border-l-2 border-ocean-teal pl-4"><h4 class="font-bold text-text-primary mb-1">Efisiensi Waktu &amp; Skalabilitas</h4><p class="text-sm text-text-secondary">Sistem ini menawarkan prediksi yang jauh lebih cepat dibandingkan dengan metode pemantauan lingkungan secara manual, serta memiliki potensi untuk dikembangkan dan diintegrasikan dengan sensor IoT di masa depan.</p></li></ul>
+</div>
+<!-- Minus -->
+<div class="matrix-card bg-surface-muted/50 border border-error/20 p-8 rounded-lg">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-error">remove_circle</span>
+<span class="font-label-caps text-label-caps text-error tracking-widest">MINUS (KELEMAHAN)</span>
+</div>
+<ul class="space-y-6">
+<li class="border-l-2 border-error pl-4">
+<h4 class="font-bold text-text-primary mb-1">Keterbatasan Data Training</h4>
+<p class="text-sm text-text-secondary">Model saat ini masih sepenuhnya bergantung pada data sintetis (dummy), dan pengumpulan dataset riil dari lapangan diproyeksikan akan memakan waktu yang cukup lama.</p>
+</li>
+<li class="border-l-2 border-error pl-4">
+<h4 class="font-bold text-text-primary mb-1">Klaim Akurasi yang Menyesatkan</h4>
+<p class="text-sm text-text-secondary">Menampilkan kontribusi fitur (feature importance) dan probabilitas dalam persentase yang sangat spesifik (misal: 97.5%) dapat terkesan terlalu akurat, padahal model hanya dilatih menggunakan data buatan.</p>
+</li>
+<li class="border-l-2 border-error pl-4"><h4 class="font-bold text-text-primary mb-1">Antarmuka yang Terlalu Padat</h4><p class="text-sm text-text-secondary">Layar 2 (Hasil Prediksi) dinilai terlalu penuh karena menggabungkan persentase, progress bar, kontribusi fitur, dan kotak peringatan sekaligus, yang berpotensi membingungkan pengguna.</p></li><li class="border-l-2 border-error pl-4"><h4 class="font-bold text-text-primary mb-1">Histori yang Terlalu Sederhana</h4><p class="text-sm text-text-secondary">Tampilan pada Layar 3 (Riwayat Prediksi) dinilai masih terlalu sederhana dan kurang memberikan konteks yang mendalam.</p></li></ul>
+</div>
+<!-- Improvement -->
+<div class="matrix-card bg-surface-muted/50 border border-primary/20 p-8 rounded-lg">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">tips_and_updates</span>
+<span class="font-label-caps text-label-caps text-primary tracking-widest">IMPROVEMENT</span>
+</div>
+<ul class="space-y-6">
+<li class="border-l-2 border-primary pl-4">
+<h4 class="font-bold text-text-primary mb-1">Edukasi dan Onboarding Penggguna</h4>
+<p class="text-sm text-text-secondary">Menambahkan halaman onboarding singkat, memberikan studi kasus contoh, serta menyisipkan penjelasan ringkas pada setiap kolom input agar pengguna non-teknis tidak kebingungan.</p>
+</li>
+<li class="border-l-2 border-primary pl-4">
+<h4 class="font-bold text-text-primary mb-1">Transparansi Model</h4>
+<p class="text-sm text-text-secondary">Alih-alih memberikan satu angka pasti, sistem sebaiknya menampilkan margin of error dari hasil probabilitas untuk menunjukkan tingkat ketidakpastian model.</p>
+</li>
+<li class="border-l-2 border-primary pl-4"><h4 class="font-bold text-text-primary mb-1">Tindak Lanjut yang Konkret</h4><p class="text-sm text-text-secondary">Menambahkan rekomendasi tindakan spesifik yang harus dilakukan oleh pemangku kepentingan untuk setiap level kategori risiko yang muncul.</p></li><li class="border-l-2 border-primary pl-4"><h4 class="font-bold text-text-primary mb-1">Fungsi Ekspor Data</h4><p class="text-sm text-text-secondary">Menambahkan fitur berupa tombol ekspor agar pengguna dapat mengunduh hasil prediksi dan histori ke dalam format PDF atau CSV untuk keperluan dokumentasi.</p></li></ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Dokumentasi & Video -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-text-primary mb-12 text-center">Dokumentasi &amp; Video</h2>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Video (source loaded from backend config) -->
+<div class="lg:col-span-12">
+<div id="yt-video-wrap" class="aspect-video w-full rounded-xl overflow-hidden border border-white/5 shadow-xl bg-surface-container-low flex items-center justify-center">
+  <span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest">MEMUAT VIDEO...</span>
+</div>
+<div id="yt-video-caption" class="mt-4 flex items-center justify-between gap-4 flex-wrap">
+<p class="font-body-md text-sm text-on-surface-variant"></p>
+</div>
+</div>
+<!-- Documentation Sidebar -->
+
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-white/5">
+<div class="flex flex-col items-center gap-stack-lg px-margin-desktop text-center w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary tracking-tighter">SDG 14.3 Indonesia</div>
+<div class="flex flex-wrap justify-center gap-stack-lg">
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/">Beranda</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/#sdg-intro">17 SDGs</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/empati">Empati</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/ideasi">Ide</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/prototipe">Prototipe</a>
+<a class="font-body-md text-body-md text-primary underline" href="/pengujian">Pengujian</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/refleksi">Refleksi</a>
+</div>
+<p class="font-body-md text-body-md text-text-secondary opacity-60">
+                © 2024 SDG 14.3 Indonesia STEM Education Project. Melindungi ekosistem laut kita.
+            </p>
+<div class="flex gap-stack-md mt-stack-md">
+<div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">language</span>
+</div>
+<div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+<script src="/js/main.js" defer></script>
+</body></html>

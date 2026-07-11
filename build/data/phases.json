@@ -1,0 +1,7 @@
+[
+  { "key": "empati", "label": "Empati", "path": "/empati" },
+  { "key": "ideasi", "label": "Ide", "path": "/ideasi" },
+  { "key": "prototipe", "label": "Prototipe", "path": "/prototipe" },
+  { "key": "pengujian", "label": "Pengujian", "path": "/pengujian" },
+  { "key": "refleksi", "label": "Refleksi", "path": "/refleksi" }
+]

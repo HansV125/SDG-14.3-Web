@@ -1,0 +1,381 @@
+<!DOCTYPE html><html class="dark" lang="id" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#ffb86c",
+                        "inverse-primary": "#006492",
+                        "secondary": "#b5c9d7",
+                        "outline": "#88929b",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-highest": "#31353a",
+                        "on-tertiary-container": "#402300",
+                        "secondary-fixed-dim": "#b5c9d7",
+                        "on-tertiary": "#492900",
+                        "background": "#0f1418",
+                        "surface-container": "#1b2024",
+                        "secondary-container": "#374955",
+                        "text-secondary": "#B0C4CE",
+                        "on-primary-container": "#002d44",
+                        "inverse-surface": "#dfe3e8",
+                        "on-primary-fixed": "#001e2f",
+                        "surface-bright": "#353a3e",
+                        "on-surface": "#dfe3e8",
+                        "surface": "#0f1418",
+                        "on-tertiary-fixed-variant": "#683d00",
+                        "inverse-on-surface": "#2c3135",
+                        "ocean-teal": "#00F2EA",
+                        "on-tertiary-fixed": "#2c1700",
+                        "primary-container": "#1399db",
+                        "surface-container-lowest": "#0a0f13",
+                        "surface-variant": "#31353a",
+                        "on-secondary-fixed": "#0a1e28",
+                        "primary-fixed": "#cae6ff",
+                        "error-container": "#93000a",
+                        "primary": "#8cceff",
+                        "outline-variant": "#3f4850",
+                        "surface-container-low": "#171c20",
+                        "tertiary": "#ffb86c",
+                        "surface-tint": "#8cceff",
+                        "on-background": "#dfe3e8",
+                        "text-primary": "#FFFFFF",
+                        "on-secondary-fixed-variant": "#374955",
+                        "on-secondary-container": "#a4b8c5",
+                        "tertiary-container": "#ce7e0a",
+                        "secondary-fixed": "#d1e5f3",
+                        "tertiary-fixed": "#ffdcbc",
+                        "on-primary": "#00344e",
+                        "primary-fixed-dim": "#8cceff",
+                        "on-secondary": "#20333d",
+                        "surface-container-high": "#262a2f",
+                        "surface-muted": "#0A2533",
+                        "surface-dim": "#0f1418",
+                        "on-primary-fixed-variant": "#004b6f",
+                        "on-surface-variant": "#bec8d2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "section-gap": "120px",
+                        "stack-lg": "32px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "margin-mobile": "20px",
+                        "stack-md": "16px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "metric-display": ["Plus Jakarta Sans"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"],
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "headline-md": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "metric-display": ["56px", {"lineHeight": "1", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+                        "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script><meta charset="utf-8"></head><body data-page="prototipe" class="font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container bg-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 border-b border-outline-variant/10 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop py-4 flex justify-between items-center">
+<div class="font-headline-md text-headline-md text-ocean-teal tracking-tighter">SDG 14.3 Indonesia</div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/">BERANDA</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/empati">EMPATI</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/ideasi">IDE</a>
+<a class="font-label-caps text-label-caps text-primary border-b-2 border-primary pb-1 relative active-dot" href="/prototipe">PROTOTIPE</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/pengujian">PENGUJIAN</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-primary transition-colors" href="/refleksi">REFLEKSI</a>
+</div>
+<div id="phase-progress" class="hidden lg:flex items-center gap-3 mr-6" aria-live="polite"><span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest whitespace-nowrap">PERJALANAN</span><div class="flex items-center gap-1.5" data-progress-dots></div></div><a class="bg-primary text-on-primary px-6 py-2 font-label-caps text-label-caps uppercase tracking-widest rounded-lg hover:bg-primary-container transition-all inline-block text-center" href="/refleksi">REFLEKSI</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-40 pb-24 ocean-gradient overflow-hidden"><div class="absolute inset-0 z-0"><div class="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/30 z-10"></div><img alt="Reef Background" class="w-full h-full object-cover grayscale-[20%] opacity-30" src="https://lh3.googleusercontent.com/aida/AP1WRLuDhrEUzDII_jKwQio2WfNGJUUq9137NKibfG1JjkGNF2--6ozkZo4V8jjALHXJMbgKO-ivZqFT7zkyUcyggndP0WXLFiTyGKZoePVVYiqiAzy5tr4VKaI5gD4DQCu1LBj5lfRQNoh17aLjYFybvt9jjG_qyLlWUtv_2mMZQBtehBCxhWRLGyxCbn2Tj0rsiZGgpkHH8a-HPGQWhGQNzlowsWru8ddFk4Cvw54QGeFKSd_OgxuLPMLUvCA"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop flex flex-col md:flex-row items-center gap-stack-lg relative z-10">
+<div class="flex-1 space-y-stack-md">
+<span class="font-label-caps text-label-caps text-ocean-teal tracking-widest uppercase">Tahapan Prototipe</span>
+<h1 class="font-headline-xl text-headline-xl text-text-primary leading-tight">
+                    Fase 3: Pengembangan Prototipe
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Mengubah konsep abstrak menjadi solusi nyata. Di fase ini, kita memvalidasi ide BlueGuard melalui perancangan arsitektur data dan visualisasi antarmuka pengguna untuk memantau pengasaman laut secara presisi.
+                </p>
+</div>
+<div class="flex-1 relative">
+</div>
+</div>
+</section>
+<!-- Starbursting Analysis -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="grid md:grid-cols-12 gap-stack-lg items-center">
+<div class="md:col-span-7 rounded-xl overflow-hidden bg-surface-muted p-8 border border-outline-variant/20">
+<img alt="Diagram Starbursting 4W1H" class="w-full h-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoRJhcYq4ih7nJ0Kst1tT7NrlCmQ2Hi71lHTyb7Uc-ycyn9RyAmjG6fk-tWqxLC9ElkU7oIyU9Z_p1_U2qTeXk4EZvfe7LXQrTEg_fkuxE0j2pVb5xeThWQZk3CuyXIr4e_hX5L3FFgKIQ-5YgqNsd0gO2LDT8LbPuGpDqFq-xkJvG6vuyn3suKAnvz9pG9sdlMhc0_B390I8_DIENbPCoLUvMl7OWxE_qR1PUspSmI_IfGhIIRyPKBPDDA6NdbpzVN_TVIlc8adqOKw">
+</div>
+<div class="md:col-span-5 space-y-stack-md">
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Metode Starbursting 4W1H</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        Sebelum memulai desain teknis, kami menerapkan analisis Starbursting untuk membedah setiap aspek kritis dari prototipe BlueGuard. Fokus utama kami adalah memastikan cakupan fungsionalitas yang komprehensif:
+                    </p>
+<ul class="space-y-4"><li class="flex gap-4"><span class="material-symbols-outlined text-ocean-teal">verified</span><div><strong class="text-on-surface block">Who</strong><span class="text-sm text-on-surface-variant">Peneliti, Dinas Lingkungan Hidup DKI Jakarta, komunitas nelayan pesisir, dan akademisi yang membutuhkan alat prediksi berbasis data.</span></div></li><li class="flex gap-4"><span class="material-symbols-outlined text-ocean-teal">inventory_2</span><div><strong class="text-on-surface block">What</strong><span class="text-sm text-on-surface-variant">Model machine learning berbasis scikit-learn untuk memprediksi persentase probabilitas pencemaran nutrisi penyebab pengasaman laut berdasarkan variabel lingkungan.</span></div></li><li class="flex gap-4"><span class="material-symbols-outlined text-ocean-teal">location_on</span><div><strong class="text-on-surface block">Where</strong><span class="text-sm text-on-surface-variant">Difokuskan pada pesisir dan daerah aliran sungai (DAS) Teluk Jakarta, dengan pengembangan model yang berjalan secara lokal.</span></div></li><li class="flex gap-4"><span class="material-symbols-outlined text-ocean-teal">schedule</span><div><strong class="text-on-surface block">When</strong><span class="text-sm text-on-surface-variant">Untuk memungkinkan deteksi dini dan intervensi cepat terhadap limpasan nutrisi yang sulit dipantau secara manual, guna mendukung target SDG 14.3.</span></div></li><li class="flex gap-4"><span class="material-symbols-outlined text-ocean-teal">settings</span><div><strong class="text-on-surface block">How</strong><span class="text-sm text-on-surface-variant">Melatih model Random Forest atau Logistic Regression menggunakan data sintetis, mengujinya dengan cross-validation, lalu menampilkan probabilitas pencemaran pada terminal teks.</span></div></li></ul>
+</div>
+</div>
+</div>
+</section>
+<!-- LEAN Canvas Section -->
+<section class="py-section-gap bg-surface-container-lowest relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop text-center mb-stack-lg">
+<h2 class="font-headline-lg text-headline-lg text-text-primary mb-4">BlueGuard Business &amp; Impact Model</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl mx-auto">
+                Lean Canvas ini memetakan bagaimana aplikasi BlueGuard menciptakan nilai bagi komunitas maritim dan memastikan keberlanjutan proyek dalam jangka panjang.
+            </p>
+</div>
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="w-full overflow-x-auto rounded-2xl border border-outline-variant/30 bg-surface-container shadow-2xl">
+<table class="w-full border-collapse text-left min-w-[800px]">
+<tbody>
+<!-- Row 1: 5 Columns -->
+<tr class="border-b border-white/10">
+<td class="p-6 border-r border-white/10 w-1/5 align-top">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Masalah</h4>
+<p class="text-sm text-on-surface-variant">• Pengasaman laut meningkat akibat limbah industri, pertanian, dan emisi CO₂.&nbsp;</p><p class="text-sm text-on-surface-variant">• Sulit mendeteksi pencemaran laut secara dini.&nbsp;</p><p class="text-sm text-on-surface-variant">• Kurangnya sistem berbasis data untuk kebijakan lingkungan.&nbsp;</p><p class="text-sm text-on-surface-variant">• Pemantauan lingkungan masih manual dan lambat.</p><div><br></div>
+</td>
+<td class="p-6 border-r border-white/10 w-1/5 align-top">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Solusi</h4>
+<p class="text-sm text-on-surface-variant">• Membuat model Machine Learning berbasis scikit learn untuk prediksi risiko pengasaman laut.&nbsp;</p><p class="text-sm text-on-surface-variant">• Dashboard visualisasi hasil prediksi secara real-time.&nbsp;</p><p class="text-sm text-on-surface-variant">• Sistem klasifikasi risiko rendah hingga kritis.&nbsp;</p><p class="text-sm text-on-surface-variant">• Sistem peringatan dini berbasis AI.</p>
+</td>
+<td class="p-6 border-r border-white/10 w-1/5 align-top bg-surface-container-high">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Nilai Unik</h4>
+<p class="text-sm text-on-surface-variant">• Sistem mampu memprediksi probabilitas risiko berdasarkan variabel lingkungan.&nbsp;</p><p class="text-sm text-on-surface-variant">• Fitur simulasi skenario (what-if simulation).&nbsp;</p><p class="text-sm text-on-surface-variant">• Menampilkan kontribusi setiap faktor lingkungan.</p><p class="text-sm text-on-surface-variant">• Menggabungkan AI, visualisasi, dan simulasi interaktif.</p>
+</td>
+<td class="p-6 border-r border-white/10 w-1/5 align-top">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Keunggulan</h4>
+<p class="text-sm text-on-surface-variant">• Prediksi lebih cepat dibanding pemantauan manual.&nbsp;</p><p class="text-sm text-on-surface-variant">• Dapat dikembangkan dengan data sensor real time.&nbsp;</p><p class="text-sm text-on-surface-variant">• Scalable untuk wilayah lain.&nbsp;</p><p class="text-sm text-on-surface-variant">• Potensi integrasi dengan sensor IoT dan drone.</p>
+</td>
+<td class="p-6 w-1/5 align-top">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Segmen</h4>
+<p class="text-sm text-on-surface-variant">• Dinas Lingkungan Hidup dan pemerintah daerah.&nbsp;</p><p class="text-sm text-on-surface-variant">• Peneliti lingkungan dan akademisi.&nbsp;</p><p class="text-sm text-on-surface-variant">• Komunitas nelayan dan organisasi lingkungan.&nbsp;</p><p class="text-sm text-on-surface-variant">• Industri pengelolaan limbah.</p>
+</td>
+</tr>
+<!-- Row 2: Merged Columns -->
+<tr class="border-b border-white/10">
+<td class="p-6 border-r border-white/10 align-top" colspan="2">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Metrik Kunci</h4>
+<p class="text-sm text-on-surface-variant">• Akurasi model Machine Learning (F1-score dan AUC ROC).&nbsp;</p><p class="text-sm text-on-surface-variant">• Jumlah prediksi yang berhasil dilakukan sistem.&nbsp;</p><p class="text-sm text-on-surface-variant">• Kecepatan sistem dalam memberikan hasil prediksi risiko.&nbsp;</p><p class="text-sm text-on-surface-variant">• Tingkat ketepatan klasifikasi risiko.&nbsp;</p><p class="text-sm text-on-surface-variant">• Jumlah pengguna atau instansi yang menggunakan sistem.&nbsp;</p><p class="text-sm text-on-surface-variant">• Penurunan tingkat pencemaran berdasarkan rekomendasi sistem.</p>
+</td>
+<td class="p-6 border-r border-white/10 align-top">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4"><span style="color: rgb(190, 200, 210); font-size: 0.875rem; font-family: &quot;Plus Jakarta Sans&quot;;" class="">“Platform AI Prediksi Risiko Pengasaman Laut berbasis Machine Learning untuk membantu deteksi dini pencemaran lingkungan pesisir secara cepat, akurat, dan berbasis data.”&nbsp;</span></h4>
+</td>
+<td class="p-6 align-top" colspan="2">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Saluran</h4>
+<p class="text-sm text-on-surface-variant">Channels Direct &amp; Government Collaboration&nbsp;</p><p class="text-sm text-on-surface-variant">• Sosialisasi kepada komunitas nelayan dan organisasi lingkungan.</p><p class="text-sm text-on-surface-variant">• Kolaborasi dengan universitas dan lembaga penelitian lingkungan.&nbsp;</p><p class="text-sm text-on-surface-variant cursor-text" spellcheck="false" data-stitch-added-classes="cursor-text"><br></p><p class="text-sm text-on-surface-variant">Digital &amp; Educational Campaign&nbsp;</p><p class="text-sm text-on-surface-variant">• Publikasi hasil analisis dan visualisasi data melalui website interaktif.&nbsp;</p><p class="text-sm text-on-surface-variant">• Edukasi media sosial tentang dampak pengasaman laut.&nbsp;</p><p class="text-sm text-on-surface-variant">• Seminar dan workshop penggunaan AI untuk lingkungan.</p>
+</td>
+</tr>
+<!-- Row 3: Merged Columns -->
+<tr>
+<td class="p-6 border-r border-white/10 align-top" colspan="3">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Struktur Biaya</h4>
+<p class="text-sm text-on-surface-variant">• Biaya pengembangan model Machine Learning dan backend.&nbsp;</p><p class="text-sm text-on-surface-variant">• Biaya dashboard UI/UX dan visualisasi data.&nbsp;</p><p class="text-sm text-on-surface-variant">• Biaya server cloud, database, dan hosting.&nbsp;</p><p class="text-sm text-on-surface-variant">• Biaya integrasi sensor lingkungan dan perangkat IoT.&nbsp;</p><p class="text-sm text-on-surface-variant">• Biaya pengumpulan dan pemrosesan data lingkungan.&nbsp;</p><p class="text-sm text-on-surface-variant">• Biaya pemeliharaan sistem dan pembaruan model AI.&nbsp;</p><div><br></div>
+</td>
+<td class="p-6 align-top" colspan="2">
+<h4 class="font-headline-md text-sm text-primary uppercase tracking-widest mb-4">Aliran Pendapatan</h4>
+<p class="text-sm text-on-surface-variant">• Kerja sama proyek dengan pemerintah daerah dan kementerian lingkungan.&nbsp;</p><p class="text-sm text-on-surface-variant">• Hibah penelitian dan pendanaan sustainability/SDGs.&nbsp;</p><p class="text-sm text-on-surface-variant">• Lisensi penggunaan platform untuk lembaga penelitian atau industri.&nbsp;</p><p class="text-sm text-on-surface-variant">• Konsultasi analisis data lingkungan berbasis AI.&nbsp;</p><p class="text-sm text-on-surface-variant">• Kerja sama dengan perusahaan industri untuk monitoring dampak lingkungan.&nbsp;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Low-Fidelity Prototype Gallery -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<div class="flex justify-between items-end mb-stack-lg">
+<div>
+<span class="font-label-caps text-label-caps text-ocean-teal tracking-widest uppercase">Visualisasi Awal</span>
+<h2 class="font-headline-lg text-headline-lg text-text-primary">Low-Fidelity Wireframes</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm hidden md:block">
+                    Iterasi awal desain fokus pada struktur navigasi dan kejelasan penyampaian data kritis tanpa gangguan estetika.
+                </p>
+</div>
+<div class="grid md:grid-cols-2 gap-stack-lg">
+  <!-- Card 1: Input Data Lingkungan -->
+  <div class="bg-surface-muted p-6 rounded-2xl border border-outline-variant/10 card-hover flex flex-col">
+    <div class="aspect-[0.7] rounded-lg overflow-hidden bg-black/20 border border-outline-variant/10 mb-6">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNlLYuzODfz627Kuxob757k6Kl3A_KBRlGy_6Hcj7G2G6lTmCCn_EiOY4GFV5zbOij7Uct7vYdh5OrWNq2WV0mpm25V8Z-j0m0CTSSF8RM8Gr0mM09Evfr-gO9rdch3EGDiloCT6AamkaEopiVKufWY_1zhC6iNxiFfty9AwPkdIuC5v1Wk-l5r8O7EGR3TWGpXnIt0G1RpViAEwirVGWY2zqSvAOJEvT7gM-SuV3MBNxT2d_G_AZ1uB0omSG1JhxOxg" alt="Input Data Lingkungan" class="w-full h-full object-cover">
+    </div>
+    <div class="mt-auto">
+      <h3 class="font-headline-md text-lg text-text-primary mb-2">Input Data Lingkungan</h3>
+      <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded text-[10px] font-bold uppercase">Wireframe</span>
+    </div>
+  </div>
+
+  <!-- Card 2: Hasil Prediksi -->
+  <div class="bg-surface-muted p-6 rounded-2xl border border-outline-variant/10 card-hover flex flex-col">
+    <div class="aspect-[0.7] rounded-lg overflow-hidden bg-black/20 border border-outline-variant/10 mb-6">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3mrIm0W1mtaIhKQFSBvVynCQKqgncjpxzQvAKMykmyBzNOQiCuLRhWCxsPaT6D9p4AYzllv9HkBIydlAwXAE259EKi98r_CqPK5Dc3QJtSODFmSDH8h8xE_7hbF2vHAf3c4ddH-ovtwgTHK9YYX7alaAyFtQ7WixU4gB3vXuqKzXyd58AlHTar1X_bsiUtV2iC0n7C3-CzETNFtb9bYCMd-k0Adb43OA4goaLSpD50JZgJBFEQuGcfCR9I6f5cr6nrQ" alt="Hasil Prediksi" class="w-full h-full object-cover">
+    </div>
+    <div class="mt-auto">
+      <h3 class="font-headline-md text-lg text-text-primary mb-2">Hasil Prediksi</h3>
+      <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded text-[10px] font-bold uppercase">Wireframe</span>
+    </div>
+  </div>
+
+  <!-- Card 3: Simulasi Skenario -->
+  <div class="bg-surface-muted p-6 rounded-2xl border border-outline-variant/10 card-hover flex flex-col">
+    <div class="aspect-[0.7] rounded-lg overflow-hidden bg-black/20 border border-outline-variant/10 mb-6">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfFY_vhTQc1kErxshT1uN9IzgIqgWcDzDtgKNrlh39J2d1xnRxYa9x3En8k1Lq2Y_VCJ8zNYeL20JvfxI6VK_Td5KE1jzZTWqb5kOfdxpCyxytZI04POUjcMgF29Aff-KhJaFUk5fouorh96GHlnbZPD9GE4JRtW_5J6aK8OloOkKMCmwzc6VKAHcrJ61UbUMIk3EPnf7wSKW2uh2SuTbfW1Qlf-XjKh9Chp892XyyIrBv_C68Gx_ShkrlsiarsSUixmD47wLtsMkADQ" alt="Simulasi Skenario" class="w-full h-full object-cover">
+    </div>
+    <div class="mt-auto">
+      <h3 class="font-headline-md text-lg text-text-primary mb-2">Riwayat Prediksi</h3>
+      <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded text-[10px] font-bold uppercase">Wireframe</span>
+    </div>
+  </div>
+
+  <!-- Card 4: Riwayat Prediksi -->
+  <div class="bg-surface-muted p-6 rounded-2xl border border-outline-variant/10 card-hover flex flex-col">
+    <div class="aspect-[0.7] rounded-lg overflow-hidden bg-black/20 border border-outline-variant/10 mb-6">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0xibmhZnz9HysxGPf-p82mPPQjkUSm3AaWtUbbOs6bgFEecPhD339gxt3-TzYCkCLNbZxlsc3Sx-zCV_a6KQJEY3IE_bN9SBQ5wLFn2hagUD5h_fVHOUIN0royWTwtl36rIgElYCaee7g0T28n_1pdH6qavyBR8PADRmmNYzoqFwO1zpfVGDw6Nlxozk-0OoAFW9s5_k9AG7eFwEfqtGMbak-mTFrbV-4qXgogvzXWPZX9JEl99CkH3FEIGkHD-DoH8U9XOjmHLzrfg" alt="Riwayat Prediksi" class="w-full h-full object-cover">
+    </div>
+    <div class="mt-auto">
+      <h3 class="font-headline-md text-lg text-text-primary mb-2">Simulasi Skenario</h3>
+      <span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded text-[10px] font-bold uppercase">Wireframe</span>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- Panduan Penggunaan -->
+<section class="py-section-gap bg-surface-muted">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-text-primary text-center mb-16">Panduan Operasional Prototipe</h2>
+<div class="grid md:grid-cols-4 gap-gutter">
+<div class="relative p-6 bg-surface rounded-xl border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">input</span>
+</div>
+<h4 class="text-text-primary font-bold mb-2">1. Input Data Lingkungan</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Pengguna memasukkan parameter lingkungan (curah hujan, vegetasi, volume pupuk, dll.) ke dalam sistem untuk memulai pemodelan risiko.
+                    </p>
+</div>
+<div class="relative p-6 bg-surface rounded-xl border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<h4 class="text-text-primary font-bold mb-2">2. Hasil Prediksi</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Sistem menyajikan angka probabilitas pencemaran secara <i data-path-to-node="2,1,1,0" data-index-in-node="55">real-time</i> beserta rincian persentase kontribusi dari masing-masing variabel.</p>
+</div>
+<div class="relative p-6 bg-surface rounded-xl border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">history</span>
+</div>
+<h4 class="text-text-primary font-bold mb-2">3. Riwayat Prediksi</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        Dasbor perekaman jejak yang menyimpan seluruh aktivitas prediksi sebelumnya, lengkap dengan waktu dan pelabelan status risikonya.
+                    </p>
+</div>
+<div class="relative p-6 bg-surface rounded-xl border border-outline-variant/10">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">handshake</span>
+</div>
+<h4 class="text-text-primary font-bold mb-2">4. Simulasi Skenario</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Fitur <i data-path-to-node="2,1,3,0" data-index-in-node="6">what-if</i> interaktif yang memungkinkan pengguna memanipulasi variabel untuk melihat simulasi dampak penurunan risiko pencemaran.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Next Phase CTA -->
+<section class="py-24 relative overflow-hidden">
+<div class="absolute inset-0 bg-primary opacity-5"></div>
+<div class="max-w-container-max mx-auto px-margin-desktop text-center relative z-10">
+<h2 class="font-headline-lg text-headline-lg text-text-primary mb-6">Siap Menguji Solusi Ini?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl mx-auto">
+                Setelah merancang prototipe, langkah selanjutnya adalah validasi lapangan untuk memastikan akurasi data dan kegunaan aplikasi bagi komunitas.
+            </p>
+<a class="inline-flex items-center gap-4 bg-primary text-on-primary px-10 py-4 rounded-lg font-bold text-lg hover:shadow-[0_0_30px_rgba(140,206,255,0.4)] transition-all" href="/pengujian">
+                Lanjut ke Fase 4: Pengujian
+                <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-white/5">
+<div class="flex flex-col items-center gap-stack-lg px-margin-desktop text-center w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary tracking-tighter">SDG 14.3 Indonesia</div>
+<div class="flex flex-wrap justify-center gap-stack-lg">
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/">Beranda</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/#sdg-intro">17 SDGs</a>
+<a class="font-body-md text-body-md text-primary underline" href="/empati">Empati</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/ideasi">Ide</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/prototipe">Prototipe</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/pengujian">Pengujian</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/refleksi">Refleksi</a>
+</div>
+<p class="font-body-md text-body-md text-text-secondary opacity-60">
+                © 2024 SDG 14.3 Indonesia STEM Education Project. Melindungi ekosistem laut kita.
+            </p>
+<div class="flex gap-stack-md mt-stack-md">
+<div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm text-white">language</span>
+</div>
+<div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm text-white">share</span>
+</div>
+</div>
+</div>
+</footer>
+<script class="">
+        // Simple scroll reveal effect
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js" defer></script>
+</body></html>

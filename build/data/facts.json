@@ -1,0 +1,47 @@
+[
+  {
+    "id": "ph-laut",
+    "value": "8,08",
+    "valueColor": "text-primary",
+    "valueStyle": "metric",
+    "label": "PH RATA-RATA LAUT INDONESIA",
+    "description": "pH rata-rata laut Indonesia telah turun ke sekitar 8,08",
+    "source": "IPCC. (2022). The Ocean and Cryosphere in a Changing Climate: Special Report. Intergovernmental Panel on Climate Change. https://www.ipcc.ch/srocc/"
+  },
+  {
+    "id": "karang-rusak",
+    "value": "50%",
+    "valueColor": "text-ocean-teal",
+    "valueStyle": "metric",
+    "label": "TERUMBU KARANG RUSAK",
+    "description": "Lebih dari 50% terumbu karang Indonesia dalam kondisi rusak atau sangat rusak.",
+    "source": "Kementerian Kelautan dan Perikanan. (2022). Laporan Kinerja KKP 2022. Kementerian Kelautan dan Perikanan Republik Indonesia. https://kkp.go.id/"
+  },
+  {
+    "id": "nelayan-terdampak",
+    "value": "2 Juta",
+    "valueColor": "text-white",
+    "valueStyle": "metric",
+    "label": "NELAYAN TERDAMPAK",
+    "description": "Diperkirakan lebih dari 2 juta nelayan Indonesia terancam mata pencahariannya",
+    "source": "FAO. (2022). The State of World Fisheries and Aquaculture 2022. Food and Agriculture Organization of the United Nations. https://doi.org/10.4060/cc0461en"
+  },
+  {
+    "id": "suhu-laut",
+    "value": "0,3\u00b0C",
+    "valueColor": "text-tertiary",
+    "valueStyle": "headline",
+    "label": "SUHU LAUT NAIK PER DEKADE",
+    "description": "Suhu permukaan laut Indonesia meningkat rata-rata 0,3\u00b0C per dekade",
+    "source": "BMKG. (2023). Buletin Iklim Laut Indonesia 2023. Badan Meteorologi, Klimatologi, dan Geofisika. https://www.bmkg.go.id/"
+  },
+  {
+    "id": "kerugian-ekonomi",
+    "value": "3.4M",
+    "valueColor": "text-primary-fixed",
+    "valueStyle": "metric",
+    "label": "KERUGIAN EKONOMI PER TAHUN",
+    "description": "Degradasi terumbu karang akibat pengasaman laut berpotensi merugikan ekonomi Indonesia hingga USD 3,4 miliar per tahun",
+    "source": "World Bank. (2021). The Sunken Billions Revisited: Progress and Challenges in Global Marine Fisheries. World Bank Group. https://doi.org/10.1596/978-0-8213-8719-6"
+  }
+]

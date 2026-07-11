@@ -1,0 +1,379 @@
+<!DOCTYPE html><html class="dark" lang="id" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Empati | SDG 14.3 Indonesia STEM Education</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(10, 37, 51, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .ocean-gradient {
+            background: radial-gradient(circle at 50% -20%, rgba(140, 206, 255, 0.15) 0%, transparent 70%);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f1418;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #31353a;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8cceff;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "ocean-teal": "#00F2EA",
+                      "on-tertiary": "#492900",
+                      "on-background": "#dfe3e8",
+                      "tertiary-fixed-dim": "#ffb86c",
+                      "surface-tint": "#8cceff",
+                      "primary-fixed-dim": "#8cceff",
+                      "inverse-on-surface": "#2c3135",
+                      "on-primary": "#00344e",
+                      "surface-bright": "#353a3e",
+                      "surface-container-low": "#171c20",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary-fixed": "#0a1e28",
+                      "tertiary-fixed": "#ffdcbc",
+                      "error": "#ffb4ab",
+                      "tertiary": "#ffb86c",
+                      "on-tertiary-fixed": "#2c1700",
+                      "inverse-surface": "#dfe3e8",
+                      "outline-variant": "#3f4850",
+                      "on-tertiary-fixed-variant": "#683d00",
+                      "on-surface-variant": "#bec8d2",
+                      "secondary-container": "#374955",
+                      "error-container": "#93000a",
+                      "surface-variant": "#31353a",
+                      "text-secondary": "#B0C4CE",
+                      "primary-fixed": "#cae6ff",
+                      "primary-container": "#1399db",
+                      "secondary": "#b5c9d7",
+                      "surface-muted": "#0A2533",
+                      "surface-container-lowest": "#0a0f13",
+                      "background": "#0f1418",
+                      "surface-dim": "#0f1418",
+                      "on-secondary-fixed-variant": "#374955",
+                      "tertiary-container": "#ce7e0a",
+                      "on-error": "#690005",
+                      "inverse-primary": "#006492",
+                      "surface-container": "#1b2024",
+                      "surface-container-highest": "#31353a",
+                      "text-primary": "#FFFFFF",
+                      "surface": "#0f1418",
+                      "on-primary-fixed-variant": "#004b6f",
+                      "on-secondary": "#20333d",
+                      "outline": "#88929b",
+                      "on-surface": "#dfe3e8",
+                      "on-primary-container": "#002d44",
+                      "on-primary-fixed": "#001e2f",
+                      "on-tertiary-container": "#402300",
+                      "secondary-fixed": "#d1e5f3",
+                      "on-secondary-container": "#a4b8c5",
+                      "surface-container-high": "#262a2f",
+                      "secondary-fixed-dim": "#b5c9d7",
+                      "primary": "#8cceff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-mobile": "20px",
+                      "gutter": "24px",
+                      "margin-desktop": "64px",
+                      "stack-sm": "8px",
+                      "stack-md": "16px",
+                      "section-gap": "120px",
+                      "container-max": "1280px",
+                      "stack-lg": "32px"
+              },
+              "fontFamily": {
+                      "metric-display": ["Plus Jakarta Sans"],
+                      "body-lg": ["Plus Jakarta Sans"],
+                      "headline-xl": ["Playfair Display"],
+                      "headline-md": ["Playfair Display"],
+                      "body-md": ["Plus Jakarta Sans"],
+                      "label-caps": ["Plus Jakarta Sans"],
+                      "headline-xl-mobile": ["Playfair Display"],
+                      "headline-lg": ["Playfair Display"]
+              },
+              "fontSize": {
+                      "metric-display": ["56px", {"lineHeight": "1", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "headline-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                      "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                      "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+      </script>
+</head>
+<body data-page="empati" class="bg-background text-on-background selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 border-b border-white/10 bg-background">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary tracking-tighter cursor-pointer active:scale-95">
+                SDG 14.3 Indonesia
+            </div>
+<div class="hidden md:flex items-center gap-stack-lg">
+<a class="font-metric-display text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="/">Beranda</a>
+<a class="font-metric-display text-label-caps uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1" href="/empati">Empati</a>
+<a class="font-metric-display text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="/ideasi">Ide</a>
+<a class="font-metric-display text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="/prototipe">Prototipe</a>
+<a class="font-metric-display text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="/pengujian">Pengujian</a>
+<a class="font-metric-display text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors duration-300" href="/refleksi">Refleksi</a>
+</div>
+<div id="phase-progress" class="hidden lg:flex items-center gap-3 mr-6" aria-live="polite"><span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest whitespace-nowrap">PERJALANAN</span><div class="flex items-center gap-1.5" data-progress-dots></div></div><a class="font-metric-display text-label-caps uppercase tracking-widest bg-primary text-on-primary font-bold hover:brightness-110 transition-all duration-200 cursor-pointer active:scale-95 px-stack-lg py-2 rounded-DEFAULT inline-block text-center" href="/refleksi">Refleksi</a>
+</nav>
+</header>
+<main class="ocean-gradient">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent z-10"></div>
+<img alt="Underwater ecosystem" class="w-full h-full object-cover opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkOX3t0QXFecsSuRMJV3ToB9XOCcuek_OLnYnhDwiK1ivvQheTzOK04eXxhGG1I8Pgr6TFlzrtz6FlcyPAGI7GUJcqSx9BrfrHUO8Q5LSVOGPn6WlsX9un8gCIJ-oGol_C8foV3stfmLmsk1C2IhzTS1OfL2_OLA5dqpTODayKFrvMuSregAtMeLzkq_JHLYb9IAY9mp0xBVttN9OWXT2TPlgQRGurpddmo-2xnY4dCSLI9qoxajEGHJcxGKerL7idLFp4CpZHGWRbeQ">
+</div>
+<div class="relative z-20 px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="flex flex-col gap-stack-md">
+<span class="font-label-caps text-label-caps text-ocean-teal tracking-[0.3em] uppercase">Tahapan Penelitian</span>
+<h1 class="font-headline-xl text-headline-xl text-white">Fase 1: Empati &amp; Penelitian</h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-xl">Memahami kesenjangan literasi terkait pengasaman laut di komunitas pesisir melalui dialog empatik, guna merancang solusi pemantauan berbasis teknologi yang dapat melindungi ketahanan ekonomi nelayan sekaligus mendukung regulasi emisi karbon.</p>
+<div class="flex gap-stack-md mt-4">
+<button class="bg-primary text-on-primary px-stack-lg py-3 rounded-DEFAULT font-bold text-label-caps uppercase tracking-wider hover:brightness-110 transition-all">
+                            Eksplorasi Data
+                        </button>
+<button class="border border-white/20 text-white px-stack-lg py-3 rounded-DEFAULT font-bold text-label-caps uppercase tracking-wider hover:bg-white/5 transition-all">
+                            Metodologi
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 4W1H Analysis -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col items-center mb-stack-lg text-center">
+<span class="font-label-caps text-label-caps text-ocean-teal mb-2">KERANGKA KERJA</span>
+<h2 class="font-headline-lg text-headline-lg text-white">Analisis 4W1H: Pengasaman Laut</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-gutter">
+<!-- Who -->
+<div class="glass-card p-stack-lg group hover:border-ocean-teal/50 transition-all" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+<span class="material-symbols-outlined text-ocean-teal text-4xl mb-4">group</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">Who</h3>
+<p class="font-body-md text-body-md text-text-secondary">Nelayan skala kecil, pembudidaya rumput laut, dan komunitas pesisir di garis depan.</p>
+</div>
+<!-- What -->
+<div class="glass-card p-stack-lg group hover:border-ocean-teal/50 transition-all" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+<span class="material-symbols-outlined text-ocean-teal text-4xl mb-4">water_drop</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">What</h3>
+<p class="font-body-md text-body-md text-text-secondary">Penurunan pH air laut akibat penyerapan CO2 berlebih, menghambat kalsifikasi terumbu karang.</p>
+</div>
+<!-- Where -->
+<div class="glass-card p-stack-lg group hover:border-ocean-teal/50 transition-all" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+<span class="material-symbols-outlined text-ocean-teal text-4xl mb-4">map</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">Where</h3>
+<p class="font-body-md text-body-md text-text-secondary">Segitiga Terumbu Karang Indonesia, khususnya di wilayah timur (Wakatobi, Raja Ampat).</p>
+</div>
+<!-- When -->
+<div class="glass-card p-stack-lg group hover:border-ocean-teal/50 transition-all" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+<span class="material-symbols-outlined text-ocean-teal text-4xl mb-4">schedule</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">When</h3>
+<p class="font-body-md text-body-md text-text-secondary">Peningkatan drastis tercatat sejak dekade terakhir dengan percepatan pemutihan karang.</p>
+</div>
+<!-- How -->
+<div class="glass-card p-stack-lg group hover:border-ocean-teal/50 transition-all" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+<span class="material-symbols-outlined text-ocean-teal text-4xl mb-4">query_stats</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2 text-xl">How</h3>
+<p class="font-body-md text-body-md text-text-secondary">Emisi karbon global larut dalam laut, membentuk asam karbonat yang merusak ekosistem.</p>
+</div>
+</div>
+</section>
+<!-- Field Research -->
+<section class="py-section-gap bg-surface-container-low/30">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-12 gap-stack-lg items-center">
+<div class="lg:col-span-5 flex flex-col gap-stack-md">
+<span class="font-label-caps text-label-caps text-ocean-teal uppercase">Laporan SURVEY</span>
+<h2 class="font-headline-lg text-headline-lg text-white">Penelitian wawasan masyarakat</h2>
+<p class="font-body-lg text-body-lg text-text-secondary">
+                        Hasil survey dari 17 responden anonim menunjukkan&nbsp;</p>
+<div class="space-y-stack-md mt-stack-md">
+<div class="flex items-center gap-stack-md p-4 bg-white/5 border-l-4 border-ocean-teal">
+<span class="font-metric-display text-metric-display text-primary text-4xl">47%</span>
+<p class="font-body-md text-body-md text-on-surface">Responden masih kurang mengerti dengan pengasaman laut</p>
+</div>
+<div class="flex items-center gap-stack-md p-4 bg-white/5 border-l-4 border-ocean-teal"><span class="font-metric-display text-metric-display text-primary text-4xl">70%</span><p class="font-body-md text-body-md text-on-surface">Responden masih kurang paham hubungan emisi CO2 dengan pengasaman laut</p></div>
+<div class="flex items-center gap-stack-md p-4 bg-white/5 border-l-4 border-ocean-teal"><span class="font-metric-display text-metric-display text-primary text-4xl"><span style="letter-spacing: -1.68px;" class="">76%</span></span><p class="font-body-md text-body-md text-on-surface">Responden khawatir terhadap dampak keasaman laut walau masih awam</p></div><div class="flex items-center gap-stack-md p-4 bg-white/5 border-l-4 border-ocean-teal"><span class="font-metric-display text-metric-display text-primary text-4xl"><span style="letter-spacing: -1.68px;" class="">70%</span></span><p class="font-body-md text-body-md text-on-surface">Responden setuju dan mendukung kuat terhadap regulasi karbon</p></div><div class="flex items-center gap-stack-md p-4 bg-white/5 border-l-4 border-ocean-teal"><span class="font-metric-display text-metric-display text-primary text-4xl">53%</span><p class="font-body-md text-body-md text-on-surface">Responden setuju inovasi teknologi dapat membantu keasaman laut</p></div></div>
+</div>
+<div class="lg:col-span-7">
+    <div class="glass-card p-stack-lg rounded-xl border-l-4 border-primary h-full flex flex-col justify-center" style="opacity: 1; transform: translateY(0px); transition: 0.6s ease-out;">
+        <div class="flex gap-stack-sm mb-4">
+            <span class="material-symbols-outlined text-primary text-4xl">analytics</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-white mb-4">Kesimpulan Utama</h3>
+        <p class="font-body-lg text-body-lg text-on-surface leading-relaxed">Meskipun literasi dan pemahaman teknis masyarakat mengenai pengasaman laut masih tergolong rendah, hal tersebut tidak menghalangi tingginya kepedulian mereka terhadap ancaman ekologis yang ditimbulkannya. Kekhawatiran publik ini secara langsung bertransformasi menjadi <b><span data-path-to-node="0" data-index-in-node="269" class="">dukungan yang sangat kuat terhadap intervensi sistemik</span>, </b>terutama desakan agar pemerintah segera menerapkan regulasi emisi karbon yang lebih ketat, serta tingginya optimisme terhadap pemanfaatan teknologi dan kolaborasi global. Secara keseluruhan, data ini menegaskan bahwa <b data-path-to-node="0" data-index-in-node="542">masyarakat telah memiliki kesiapan penuh untuk mendukung aksi nyata dan kebijakan pro-lingkungan</b>, sehingga langkah krusial selanjutnya adalah menjembatani empati tersebut dengan implementasi solusi dan advokasi kebijakan di tingkat makro.</p>
+    </div>
+</div>
+</div>
+</section>
+<!-- Problem Statement Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col mb-stack-lg">
+<span class="font-label-caps text-label-caps text-ocean-teal mb-2 uppercase">penelitian dengan empati</span>
+<h2 class="font-headline-lg text-headline-lg text-white">Matriks Penelitian</h2>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full border-collapse">
+<thead>
+<tr class="border-b border-outline-variant">
+<th class="py-4 px-6 text-left font-metric-display text-label-caps text-primary uppercase tracking-widest">Solusi yang sudah ada: nama perusahaan atau provider</th>
+<th class="py-4 px-6 text-left font-metric-display text-label-caps text-primary uppercase tracking-widest">Aplikasi: Sistem Dashboard Pemantauan pH Laut &amp; IoT</th>
+<th class="py-4 px-6 text-left font-metric-display text-label-caps text-primary uppercase tracking-widest">Program Pemerintah: Jaringan Observasi Pengasaman Laut (Sensor Buoy)</th>
+<th class="py-4 px-6 text-left font-metric-display text-label-caps text-primary uppercase tracking-widest">Produk Alternatif: Teknologi Biorock (Terumbu Karang Buatan)</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-on-surface-variant">
+<tr class="border-b border-outline-variant/30 bg-surface-container-low/20 hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-6">Apa yang mereka sediakan? - spesifik</td>
+<td class="py-4 px-6">Aplikasi mobile Android yang menarik data real-time dari sensor IoT di laut. Menyediakan dashboard visualisasi yang memetakan persebaran titik kritis keasaman (misalnya menggunakan pemodelan spasial seperti diagram Voronoi) untuk mengestimasi area yang paling terdampak.</td>
+<td class="py-4 px-6">Pemasangan stasiun pemantauan pelampung (buoy) di perairan lepas dan pesisir oleh lembaga pemerintah untuk memantau indikator biokimia laut secara berkala dan terpusat.</td>
+<td class="py-4 px-6 text-ocean-teal"><font color="#bec8d2">Struktur rangka baja yang dialiri arus listrik searah berkekuatan rendah (elektrolisis). Proses ini mendorong pembentukan mineral kalsium karbonat di sekitar rangka, membantu karang tumbuh lebih cepat di perairan asam.</font></td>
+</tr>
+<tr class="border-b border-outline-variant/30 bg-surface-container-low/20 hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-6">Siapa target audiens mereka? - misalnya kelompok usia / budaya / pemerintah / sekolah / kelompok masyarakat</td>
+<td class="py-4 px-6"><div class="">Peneliti kelautan, peternak tiram/kerang, mahasiswa, dan komunitas konservasi lokal yang menggunakan perangkat pintar.</div></td>
+<td class="py-4 px-6"><div class="">Pembuat kebijakan, institusi penelitian nasional, dan badan meteorologi kelautan.</div></td>
+<td class="py-4 px-6 text-ocean-teal"><div><font color="#bec8d2">LSM konservasi laut, komunitas penyelam, industri pariwisata pesisir, dan masyarakat lokal yang bergantung pada ekosistem terumbu karang.</font></div></td>
+</tr>
+<tr class="border-b border-outline-variant/30 bg-surface-container-low/20 hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-6">Apakah mereka gratis / berapa biayanya untuk layanan atau produk ini? - berapa biayanya untuk mengakses solusi ini?</td>
+<td class="py-4 px-6"><div class="">Aplikasinya gratis (biasanya berbasis open-source), namun perangkat keras sensor IoT kelautannya memerlukan biaya tambahan untuk dibeli atau dirakit.&nbsp;</div></td>
+<td class="py-4 px-6"><div class="">Gratis bagi masyarakat sebagai bentuk informasi publik, tetapi memakan anggaran negara yang sangat besar untuk pengadaan dan pemeliharaan alat.&nbsp;</div></td>
+<td class="py-4 px-6 text-primary"><div><font color="#bec8d2">Cukup mahal untuk instalasi awal karena membutuhkan material baja, kabel bawah laut, dan pasokan energi listrik yang stabil (seringkali menggunakan panel surya).</font></div></td>
+</tr>
+<tr class="border-b border-outline-variant/30 bg-surface-container-low/20 hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-6">Kesenjangan apa yang Anda lihat dalam layanan atau produk mereka? – siapa yang ketinggalan dengan layanan ini?</td>
+<td class="py-4 px-6"><div class="">Nelayan tradisional dan pembudidaya kerang berskala kecil jarang memiliki akses perangkat keras, koneksi internet stabil, atau literasi untuk membaca grafik spasial ini, sehingga mereka tertinggal.&nbsp;</div></td>
+<td class="py-4 px-6"><div class="">Alat ini seringkali hanya dipasang di perairan strategis berskala nasional. Masyarakat dan nelayan di perairan pesisir kecil atau daerah terpencil tertinggal karena perairan mereka tidak terpetakan.&nbsp;</div></td>
+<td class="py-4 px-6 text-ocean-teal"><span style="color: rgb(190, 200, 210);" class="">Solusi ini sulit dijangkau oleh komunitas pesisir atau kawasan konservasi dengan pendanaan terbatas karena membutuhkan biaya instalasi awal yang mahal dan ketersediaan infrastruktur listrik.&nbsp;</span></td>
+</tr>
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-6">Wawasan lainnya</td>
+<td class="py-4 px-6"><div class="">Pemrosesan aliran data real-time yang besar seringkali membuat aplikasi tidak stabil jika arsitektur kodenya tidak dirancang secara efisien (misalnya dengan menerapkan pola seperti MVVM untuk memisahkan logika dari antarmuka).</div></td>
+<td class="py-4 px-6"><div><div class="">Alat pemantau buoy ini sangat rentan rusak atau hilang akibat cuaca buruk, aktivitas penangkapan ikan (seperti tersangkut jaring nelayan), atau vandalisme di tengah laut.&nbsp;</div></div></td>
+<td class="py-4 px-6 text-ocean-teal"><div><font color="#bec8d2">Sistem ini sangat bergantung pada suplai listrik terus-menerus; jika terputus, kalsifikasi terhenti. Teknologi ini juga hanya mitigasi lokal, bukan solusi atas tingginya emisi karbon global penyebab laut asam.&nbsp;</font></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section><section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="relative overflow-hidden bg-primary-container rounded-xl p-stack-lg md:p-section-gap/2 flex flex-col md:flex-row gap-stack-lg items-center">
+<div class="absolute top-0 right-0 p-stack-md opacity-20">
+<span class="material-symbols-outlined text-[120px] text-on-primary-container">emergency_home</span>
+</div>
+<div class="relative z-10 flex-1">
+<span class="font-label-caps text-label-caps text-on-primary-container mb-4 block">SINTESIS AKHIR</span>
+<h2 class="font-headline-lg text-headline-lg text-on-primary-container mb-stack-md">Pernyataan Masalah</h2>
+<p class="font-headline-md text-headline-md text-white/90 leading-tight"></p><div class=""><h2 class="font-headline-lg text-headline-lg text-on-primary-container mb-stack-md" style="--tw-border-spacing-y: 0; --tw-translate-x: 0; --tw-translate-y: 0; --tw-rotate: 0; --tw-skew-x: 0; --tw-skew-y: 0; --tw-scale-x: 1; --tw-scale-y: 1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-from-position: ; --tw-gradient-via-position: ; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgb(59 130 246 / 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; --tw-shadow: 0 0 #0000; --tw-shadow-colored: 0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; --tw-contain-size: ; --tw-contain-layout: ; --tw-contain-paint: ; --tw-contain-style: ; --tw-text-opacity: 1; color: rgb(0, 45, 68); outline: none !important; box-shadow: none !important;"><span style="color: rgb(0, 45, 68); font-size: 32px; background-color: transparent;" class="leading-none">"Bagaimana kita bisa mengembangkan sistem prediksi risiko pengasaman laut berbasis <i>Machine Learning</i>&nbsp;yang akurat sekaligus memitigasi ancaman kerusakan ekosistem perairan secara dini?"</span></h2></div><p class=""></p>
+</div>
+<div class="relative z-10 w-full md:w-auto">
+<a class="w-full md:w-auto inline-block text-center bg-surface-container-lowest text-primary font-bold px-12 py-6 rounded-DEFAULT text-label-caps uppercase tracking-widest shadow-xl hover:-translate-y-1 transition-all" href="/ideasi">
+                        Mulai Ideasi
+                    </a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-white/5">
+<div class="flex flex-col items-center gap-stack-lg px-margin-desktop text-center w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary tracking-tighter">SDG 14.3 Indonesia</div>
+<div class="flex flex-wrap justify-center gap-stack-lg">
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/">Beranda</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/#sdg-intro">17 SDGs</a>
+<a class="font-body-md text-body-md text-primary underline" href="/empati">Empati</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/ideasi">Ide</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/prototipe">Prototipe</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/pengujian">Pengujian</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/refleksi">Refleksi</a>
+</div>
+<p class="font-body-md text-body-md text-text-secondary opacity-60">
+                © 2024 SDG 14.3 Indonesia STEM Education Project. Melindungi ekosistem laut kita.
+            </p>
+<div class="flex gap-stack-md mt-stack-md">
+<div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">language</span>
+</div>
+<div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal interaction
+        window.addEventListener('scroll', () => {
+            const elements = document.querySelectorAll('.glass-card');
+            elements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 50) {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        // Initialize opacity for animation
+        document.querySelectorAll('.glass-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+        });
+        
+        // Trigger first view
+        setTimeout(() => window.dispatchEvent(new Event('scroll')), 100);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js" defer></script>
+</body></html>

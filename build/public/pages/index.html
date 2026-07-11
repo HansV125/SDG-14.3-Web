@@ -1,0 +1,375 @@
+<!DOCTYPE html><html class="dark" lang="id" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>SDG 14 Project Indonesia | Life Below Water</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#004b6f",
+                        "surface-container-lowest": "#0a0f13",
+                        "on-primary-fixed": "#001e2f",
+                        "on-tertiary-container": "#402300",
+                        "on-background": "#dfe3e8",
+                        "outline-variant": "#3f4850",
+                        "text-secondary": "#B0C4CE",
+                        "on-tertiary": "#492900",
+                        "primary": "#8cceff",
+                        "primary-fixed": "#cae6ff",
+                        "surface": "#0f1418",
+                        "error": "#ffb4ab",
+                        "secondary-container": "#374955",
+                        "surface-variant": "#31353a",
+                        "on-primary-container": "#002d44",
+                        "on-secondary": "#20333d",
+                        "surface-container-low": "#171c20",
+                        "primary-container": "#1399db",
+                        "error-container": "#93000a",
+                        "on-surface": "#dfe3e8",
+                        "on-secondary-fixed-variant": "#374955",
+                        "surface-container-high": "#262a2f",
+                        "on-surface-variant": "#bec8d2",
+                        "surface-muted": "#0A2533",
+                        "surface-container": "#1b2024",
+                        "text-primary": "#FFFFFF",
+                        "on-primary": "#00344e",
+                        "surface-tint": "#8cceff",
+                        "surface-dim": "#0f1418",
+                        "tertiary": "#ffb86c",
+                        "outline": "#88929b",
+                        "tertiary-container": "#ce7e0a",
+                        "on-error": "#690005",
+                        "on-tertiary-fixed": "#2c1700",
+                        "secondary": "#b5c9d7",
+                        "secondary-fixed-dim": "#b5c9d7",
+                        "on-secondary-container": "#a4b8c5",
+                        "inverse-on-surface": "#2c3135",
+                        "ocean-teal": "#00F2EA",
+                        "on-tertiary-fixed-variant": "#683d00",
+                        "primary-fixed-dim": "#8cceff",
+                        "background": "#0f1418",
+                        "tertiary-fixed": "#ffdcbc",
+                        "secondary-fixed": "#d1e5f3",
+                        "inverse-surface": "#dfe3e8",
+                        "surface-bright": "#353a3e",
+                        "surface-container-highest": "#31353a",
+                        "on-secondary-fixed": "#0a1e28",
+                        "on-error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#ffb86c",
+                        "inverse-primary": "#006492"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "stack-lg": "32px",
+                        "stack-md": "16px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "8px",
+                        "section-gap": "120px",
+                        "gutter": "24px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "label-caps": ["Plus Jakarta Sans"],
+                        "metric-display": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "headline-md": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "label-caps": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "metric-display": ["56px", {"lineHeight": "1", "letterSpacing": "-0.03em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-xl-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-xl": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-effect {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .ocean-gradient {
+            background: linear-gradient(180deg, rgba(15, 20, 24, 0.4) 0%, rgba(15, 20, 24, 1) 100%);
+        }
+        .hero-mask {
+            mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body data-page="index" class="bg-background text-on-surface selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface/80 backdrop-blur-md border-b border-white/10 flex justify-between items-center px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-tertiary dark:text-tertiary"><span style="color: rgb(140, 206, 255); letter-spacing: -1.6px; background-color: rgb(15, 20, 24);" class="">SDG 14.3 Indonesia</span></div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary border-b-2 border-primary pb-1" href="/">Beranda</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="#sdg-intro">17 SDGs</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="/empati">Empati</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="/ideasi">Ide</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="/prototipe">Prototipe</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant hover:text-primary transition-colors" href="/pengujian">Pengujian</a>
+</div>
+<div id="phase-progress" class="hidden lg:flex items-center gap-3 mr-6" aria-live="polite"><span class="font-label-caps text-label-caps text-on-surface-variant tracking-widest whitespace-nowrap">PERJALANAN</span><div class="flex items-center gap-1.5" data-progress-dots></div></div><a class="bg-primary text-on-primary px-6 py-2 font-label-caps text-label-caps uppercase tracking-widest rounded-lg hover:bg-primary-container transition-all inline-block text-center" href="/refleksi">Refleksi</a>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0 transition-all duration-1000 opacity-100 translate-y-0">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-background z-10"></div>
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic wide-angle shot of a vibrant underwater coral reef in Indonesia. Sunlight rays pierce through the clear turquoise water, illuminating schools of tropical fish and a sea turtle swimming gracefully. The mood is majestic and awe-inspiring, showcasing the rich biodiversity of Life Below Water in a professional digital photography style." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuA5OxFMTvxz1gGmbVcZNfzYP_TDvcAT5omELwj_5Zd7gZgCffDSwow95KFlZOces7EOKLfsaXkTRQhla7sTK5NMGubB0k2kU8ImLH7NeggMjcnc0CwFV0GQlqHYYa6rgT-kah6EJ3fHNodfB7cgVZWOotssnwgOUL2FOZ71N_7nlxkdVMM6bGrCbGaQseKW2GHB_sv0TLmTKoCkYKbjSWKvyy0PoVvzPlv9hcdMf7wfvBxcjilvQ3aq&quot;);"></div>
+</div>
+<div class="relative z-20 w-full px-margin-desktop grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-container-max mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+<div class="md:col-span-8 space-y-stack-lg">
+<div class="flex items-center gap-4">
+<img alt="SDG 14" class="w-16 h-16 rounded-lg shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyXXLvgcYieQrgIZSNGhp65YbwsY6E-th8XsPqlbAMsJq9GUdseZCGLzFQbWFRyaizhko8WooE44gjYiALbHFzLnwyncTon5vdFragTRlXSyynjs7DaxgGSck5620pQ-jBBssXgWozFflCzLjI2P998RHuTXnYzatJrUjEWF6ManO1fp7MOm3AqTd9qu7OcQMoxu7Dn0Cf5sJzU5rbDbt4cks1eXfygyzuTCAuEamVfx7gcVVESpNF">
+<span class="font-label-caps text-label-caps uppercase tracking-[0.3em] text-ocean-teal">STEM Initiative 2026</span>
+</div>
+<h1 class="font-headline-xl text-white text-headline-lg">Ekosistem Lautan &amp; <br class=""><span class="italic text-primary font-light" style="font-style: normal;">Kehidupan di Bawah Air</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    Proyek ini mengeksplorasi Tujuan Pembangunan Berkelanjutan nomor 14 PBB — melestarikan dan menjaga keberlanjutan laut dan sumber daya kelautan di Indonesia sebagai poros maritim dunia.
+                </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<a class="px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase rounded-lg hover:scale-105 transition-transform inline-block text-center" href="#sdg-intro">
+                        Lihat 17 SDGs
+                    </a>
+<a class="px-8 py-4 border border-white/20 text-white font-label-caps text-label-caps uppercase rounded-lg hover:bg-white/10 transition-all inline-block text-center" href="/empati">
+                        Mulai Proyek
+                    </a>
+</div>
+</div>
+</div>
+<!-- Atmosphere Light Ray -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-20 pointer-events-none transition-all duration-1000 opacity-100 translate-y-0">
+<div class="w-full h-full bg-gradient-to-l from-primary/30 to-transparent blur-[120px]"></div>
+</div>
+</section>
+<!-- SDG 17 Intro Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto" id="sdg-intro">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-section-gap items-center transition-all duration-1000 opacity-100 translate-y-0">
+<div class="lg:col-span-5 space-y-stack-md">
+<h2 class="font-headline-lg text-headline-md">17 Tujuan Pembangunan Berkelanjutan PBB</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Sustainable Development Goals (SDGs) adalah panggilan global untuk melindungi planet kita. Di Indonesia, fokus utama tertuju pada Goal 14: melestarikan ekosistem laut yang menjadi jantung biodiversitas kita.</p>
+<div class="pt-8 border-t border-outline-variant/20">
+<div class="flex items-center gap-4 group cursor-pointer">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined">waves</span>
+</div>
+<div>
+<h4 class="font-bold text-white">Prioritas Nasional: Goal 14</h4>
+<p class="text-sm text-on-surface-variant">Fokus utama pada ekosistem kelautan Indonesia.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-6 gap-2"><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">1</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">2</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">3</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">4</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">5</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">6</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">7</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">8</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">9</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">10</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">11</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">12</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">13</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-primary-container text-white scale-110 shadow-lg ring-2 ring-primary z-10 overflow-hidden"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyXXLvgcYieQrgIZSNGhp65YbwsY6E-th8XsPqlbAMsJq9GUdseZCGLzFQbWFRyaizhko8WooE44gjYiALbHFzLnwyncTon5vdFragTRlXSyynjs7DaxgGSck5620pQ-jBBssXgWozFflCzLjI2P998RHuTXnYzatJrUjEWF6ManO1fp7MOm3AqTd9qu7OcQMoxu7Dn0Cf5sJzU5rbDbt4cks1eXfygyzuTCAuEamVfx7gcVVESpNF" class="w-full h-full object-cover" alt="SDG 14"></div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">15</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">16</div><div class="aspect-square rounded-sm flex items-center justify-center text-xs font-bold bg-surface-container-high text-on-surface-variant opacity-40">17</div></div>
+</div>
+</section>
+<!-- Facts Section -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="px-margin-desktop max-w-container-max mx-auto space-y-stack-lg transition-all duration-1000 opacity-100 translate-y-0">
+<div class="flex flex-col md:flex-row justify-between items-end gap-stack-md">
+<div class="space-y-4">
+<h2 class="font-headline-lg text-headline-md">5 Fakta SDG 14.3<br> di Indonesia</h2>
+<div class="w-24 h-1 bg-ocean-teal"></div>
+</div>
+<p class="max-w-md font-body-md text-on-surface-variant">
+                    Indonesia memegang peran krusial dalam menjaga keseimbangan ekosistem laut dunia dengan kekayaan biodiversitas yang tak tertandingi.
+                </p>
+</div>
+<div id="facts-grid" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-gutter">
+<!-- Fact 1 -->
+<div class="p-8 bg-surface-muted border border-white/5 rounded-lg space-y-4 hover:border-primary/30 transition-all pb-16 h-full">
+<span class="font-metric-display text-metric-display text-primary block">8,08</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant">PH RATA-RATA LAUT INDONESIA</p>
+<p class="text-sm opacity-60">pH rata-rata laut Indonesia telah turun ke sekitar 8,08</p><p class="text-xs text-on-surface-variant opacity-60 mt-2 italic">IPCC. (2022). The Ocean and Cryosphere in a Changing Climate: Special Report. Intergovernmental Panel on Climate Change. https://www.ipcc.ch/srocc/</p>
+</div>
+<!-- Fact 2 -->
+<div class="p-8 bg-surface-muted border border-white/5 rounded-lg space-y-4 hover:border-primary/30 transition-all pb-16 h-full">
+<span class="font-metric-display text-metric-display text-ocean-teal block">50%</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant">TERUMBU KARANG RUSAK</p>
+<p class="text-sm opacity-60">Lebih dari 50% terumbu karang Indonesia dalam kondisi rusak atau sangat rusak.</p>
+<p class="text-xs text-on-surface-variant opacity-60 mt-2 italic">Kementerian Kelautan dan Perikanan. (2022). Laporan Kinerja KKP 2022. Kementerian Kelautan dan Perikanan Republik Indonesia. https://kkp.go.id/</p></div>
+<!-- Fact 3 -->
+<div class="p-8 bg-surface-muted border border-white/5 rounded-lg space-y-4 hover:border-primary/30 transition-all pb-16 h-full">
+<span class="font-metric-display text-metric-display text-white block">2 Juta</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant">NELAYAN TERDAMPAK</p>
+<p class="text-sm opacity-60">Diperkirakan lebih dari 2 juta nelayan Indonesia terancam mata pencahariannya</p>
+<p class="text-xs text-on-surface-variant opacity-60 mt-2 italic">FAO. (2022). The State of World Fisheries and Aquaculture 2022. Food and Agriculture Organization of the United Nations. https://doi.org/10.4060/cc0461en</p></div>
+<!-- Fact 4 -->
+<div class="p-8 bg-surface-muted border border-white/5 rounded-lg space-y-4 hover:border-primary/30 transition-all pb-16 h-full">
+<span class="font-metric-display text-headline-lg text-tertiary block">0,3°C</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant">SUHU LAUT NAIK PER DEKADE</p>
+<p class="text-sm opacity-60">Suhu permukaan laut Indonesia meningkat rata-rata 0,3°C per dekade</p>
+<p class="text-xs text-on-surface-variant opacity-60 mt-2 italic">BMKG. (2023). Buletin Iklim Laut Indonesia 2023. Badan Meteorologi, Klimatologi, dan Geofisika. https://www.bmkg.go.id/</p></div>
+<!-- Fact 5 -->
+<div class="p-8 bg-surface-muted border border-white/5 rounded-lg space-y-4 hover:border-primary/30 transition-all h-full pb-8">
+<span class="font-metric-display text-metric-display text-primary-fixed block">3.4M</span>
+<p class="font-label-caps text-label-caps text-on-surface-variant">KERUGIAN EKONOMI PER TAHUN</p>
+<p class="text-sm opacity-60">Degradasi terumbu karang akibat pengasaman laut berpotensi merugikan ekonomi Indonesia hingga USD 3,4 miliar per tahu</p>
+<p class="text-xs text-on-surface-variant opacity-60 mt-2 italic">World Bank. (2021). The Sunken Billions Revisited: Progress and Challenges in Global Marine Fisheries. World Bank Group. https://doi.org/10.1596/978-0-8213-8719-6</p></div>
+</div>
+</div>
+</section>
+<!-- Targets Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 space-y-4 transition-all duration-1000 opacity-100 translate-y-0">
+<h2 class="font-headline-lg text-headline-md">Target SDG 14 yang Dipilih</h2>
+<p class="font-body-md text-on-surface-variant max-w-2xl mx-auto">Fokus utama implementasi STEM 2026 diarahkan pada mitigasi perubahan kimiawi laut yang mengancam biodiversitas.</p>
+</div>
+<div class="max-w-3xl mx-auto transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Target 14.3 -->
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-high p-12 hover:bg-surface-container-highest transition-all border border-primary/10">
+<div class="flex justify-between items-start mb-8">
+<div class="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-4xl">science</span>
+</div>
+<span class="font-label-caps text-label-caps text-primary tracking-widest">TARGET 14.3</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-4">Target 14.3: Mitigasi Asam Laut</h3>
+<p class="font-body-md text-on-surface-variant">Meminimalkan dan mengatasi dampak pengasaman laut, termasuk melalui peningkatan kerjasama ilmiah di semua tingkatan.</p>
+<div class="mt-8 pt-8 border-t border-white/5 flex items-center gap-4">
+<div class="h-2 flex-1 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-full"></div>
+</div>
+<span class="text-xs font-bold text-primary whitespace-nowrap">PRIORITAS TINGGI</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SWOT Section -->
+<section class="py-section-gap px-margin-desktop max-w-container-max mx-auto">
+<h2 class="font-headline-lg mb-4 text-headline-md">Analisis Strategis Indonesia</h2>
+<p class="font-body-md text-on-surface-variant mb-16 max-w-2xl">Evaluasi kesiapan nasional terhadap tantangan pengasaman laut (Ocean Acidification) berdasarkan data riset terkini.</p>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter transition-all duration-1000 opacity-100 translate-y-0">
+<!-- Strength -->
+<div class="p-8 border-l-4 border-ocean-teal bg-surface-container-low">
+<h4 class="font-label-caps text-label-caps text-ocean-teal mb-4 uppercase">Strengths</h4>
+<ul class="space-y-4 font-body-md text-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-ocean-teal text-sm mt-1">check_circle</span> Indonesia memiliki terumbu karang terluas di dunia (~51.000 km²) sebagai laboratorium alam riset pengasaman laut</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-ocean-teal text-sm mt-1">check_circle</span> Kerangka hukum kelautan kuat: UU No. 32/2014 tentang Kelautan dan UU No. 27/2007 tentang Pengelolaan Wilayah Pesisir</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-ocean-teal text-sm mt-1">check_circle</span> Keterlibatan aktif dalam Coral Triangle Initiative bersama 6 negara, dengan mandat langsung terhadap kesehatan ekosistem laut&nbsp;</li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-ocean-teal text-sm mt-1">check_circle</span> Kapasitas riset kelautan berkembang melalui BRIN (Badan Riset dan Inovasi Nasional) dan institusi seperti LIPI Kelautan</li></ul>
+</div>
+<!-- Weakness -->
+<div class="p-8 border-l-4 border-primary bg-surface-container-low">
+<h4 class="font-label-caps text-label-caps text-primary mb-4 uppercase">Weaknesses</h4>
+<ul class="space-y-4 font-body-md text-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">report</span> Jaringan stasiun pemantauan pH laut sangat terbatas, data pengasaman laut Indonesia masih sangat jarang dibanding negara maju</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">report</span>&nbsp;Indonesia adalah salah satu dari 10 penghasil emisi terbesar dunia (IEA, 2022)</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">report</span><div class="">Kapasitas SDM riset kelautan tidak merata, terkonsentrasi di Jawa dan sebagian Sulawesi</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-sm mt-1">report</span> Koordinasi antarlembaga (KKP, KLHK, BRIN, BMKG) dalam isu pengasaman laut masih lemah dan terfragmentasi</li></ul>
+</div>
+<!-- Opportunity -->
+<div class="p-8 border-l-4 border-tertiary bg-surface-container-low">
+<h4 class="font-label-caps text-label-caps text-tertiary mb-4 uppercase">Opportunities</h4>
+<ul class="space-y-4 font-body-md text-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-sm mt-1">trending_up</span>Potensi blue carbon hsebagai solusi berbasis alam untuk menyerap CO₂ dan menstabilkan pH</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-sm mt-1">trending_up</span> Teknologi biorock dan rekayasa karang tahan asam sedang dikembangkan, peluang transfer teknologi ke Indonesia</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-sm mt-1">trending_up</span><div class="">Global Plastics Treaty dan negosiasi iklim COP memberikan peluang pendanaan internasional untuk riset dan adaptasi laut</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-tertiary text-sm mt-1">trending_up</span> Meningkatnya minat global terhadap ocean acidification membuka akses kolaborasi riset internasional (IAEA Ocean Acidification program)</li></ul>
+</div>
+<!-- Threat -->
+<div class="p-8 border-l-4 border-error bg-surface-container-low">
+<h4 class="font-label-caps text-label-caps text-error mb-4 uppercase">Threats</h4>
+<ul class="space-y-4 font-body-md text-sm">
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-error text-sm mt-1">warning</span> IPCC AR6 (2022) memperingatkan bahwa pada 2100, pH laut bisa turun hingga 7,95 dalam skenario emisi tinggi</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-error text-sm mt-1">warning</span> Ketergantungan ekonomi pada batu bara: transisi energi yang lambat memperburuk laju peningkatan CO₂ di perairan Indonesia</li>
+<li class="flex items-start gap-2"><span class="material-symbols-outlined text-error text-sm mt-1">warning</span><div class="">Pengasaman laut bersifat global dan kumulatif, tanpa pengurangan emisi CO₂ global, upaya lokal sangat terbatas dampaknya</div><div><br></div></li><li class="flex items-start gap-2"><span class="material-symbols-outlined text-error text-sm mt-1">warning</span> Pengasaman laut berinteraksi dengan ancaman lain (suhu, polusi, overfishing) menciptakan dampak berlipat yang sulit diurai secara terpisah</li></ul>
+</div>
+</div>
+</section>
+<!-- Project Journey -->
+
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-white/5">
+<div class="flex flex-col items-center gap-stack-lg px-margin-desktop text-center w-full max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary tracking-tighter">SDG 14.3 Indonesia</div>
+<div class="flex flex-wrap justify-center gap-stack-lg">
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/">Beranda</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/#sdg-intro">17 SDGs</a>
+<a class="font-body-md text-body-md text-primary underline" href="/empati">Empati</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/ideasi">Ide</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/prototipe">Prototipe</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/pengujian">Pengujian</a>
+<a class="font-body-md text-body-md text-text-secondary hover:text-primary transition-colors" href="/refleksi">Refleksi</a>
+</div>
+<p class="font-body-md text-body-md text-text-secondary opacity-60">
+                © 2024 SDG 14.3 Indonesia STEM Education Project. Melindungi ekosistem laut kita.
+            </p>
+<div class="flex gap-stack-md mt-stack-md">
+<div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">language</span>
+</div>
+<div class="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center hover:border-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm">share</span>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('opacity-100', 'translate-y-0');
+                entry.target.classList.remove('opacity-0', 'translate-y-8');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section > div').forEach(el => {
+        el.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-8');
+        observer.observe(el);
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js" defer></script>
+</body></html>
